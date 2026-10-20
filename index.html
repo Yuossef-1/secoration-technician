@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ديكورات الشيبورد وبديل الخشب والرخام | خلفيات تلفزيون حديثة</title>
+    <!-- خط القاهرة ورابط FontAwesome للأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #2b2b2b;
+            line-height: 1.6;
+        }
+
+        /* ----- الهيدر العلوي ----- */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 900;
+            color: #1a1a1a;
+        }
+
+        .logo span {
+            color: #c59b27; /* لون ذهبي دافئ */
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c59b27;
+        }
+
+        .header-phone-btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 9px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(39, 174, 96, 0.2);
+            transition: 0.3s;
+        }
+
+        .header-phone-btn:hover {
+            background-color: #219653;
+            transform: translateY(-2px);
+        }
+
+        /* ----- القسم الرئيسي (Hero Section) ----- */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            margin-top: 70px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+            font-weight: 900;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 750px;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+
+        .cta-btn {
+            background-color: #c59b27;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(197, 155, 39, 0.4);
+        }
+
+        .cta-btn:hover {
+            background-color: #a8821f;
+        }
+
+        /* ----- قسم التخصصات والخدمات ----- */
+        .services {
+            padding: 70px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-top: 4px solid #c59b27;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card i {
+            font-size: 42px;
+            color: #c59b27;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 12px;
+            color: #1a1a1a;
+            font-size: 20px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ----- قسم خاص بديكورات الشاشة والتلفزيون ----- */
+        .tv-section {
+            background-color: #ffffff;
+            padding: 70px 5%;
+        }
+
+        .tv-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tv-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .tv-text h2 {
+            font-size: 30px;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+
+        .tv-text p {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .tv-features {
+            list-style: none;
+        }
+
+        .tv-features li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .tv-features i {
+            color: #27ae60;
+        }
+
+        .tv-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .tv-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ----- الأزرار العائمة (Floating Buttons) ----- */
+        .floating-buttons {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 9999;
+        }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 26px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .float-btn.whatsapp {
+            background-color: #25d366;
+        }
+
+        .float-btn.phone {
+            background-color: #007bff;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.12);
+        }
+
+        /* ----- الفوتر ----- */
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* للتجاوب مع أجهزة الجوال */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 26px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            header {
+                padding: 12px 4%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <div class="logo">عالم <span>الديكور الحديث</span></div>
+        <ul class="nav-links">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#tv-design">ديكورات التلفزيون</a></li>
+        </ul>
+        <div class="header-contact">
+            <a href="tel:0579202448" class="header-phone-btn">
+                <i class="fas fa-phone-alt"></i>
+                <span>057 920 2448</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- الهيرو / الواجهة -->
+    <section class="hero">
+        <h1>أحدث ديكورات بديل الخشب، الرخام، والشيبورد</h1>
+        <p>تصميم وتنفيذ أفضل الخلفيات والديكورات الداخلية للمجالس والصالات بأعلى جودة لمسات فخمة تعكس ذوقك.</p>
+        <a href="tel:0579202448" class="cta-btn">تواصل معنا للطلب والاستفسار</a>
+    </section>
+
+    <!-- قسم الخدمات والديكورات -->
+    <section class="services" id="services">
+        <h2 class="section-title">تخصصاتنا في الديكور الداخلي</h2>
+        <p class="section-subtitle">نضمن لك الفخامة والمتانة مع خامات مقاومة للرطوبة والحرارة</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-cubes"></i>
+                <h3>بديل الشيبورد</h3>
+                <p>تكسيات جدارية فاخرة بخامات الشيبورد الحديثة المقاومة وتشكيل أحدث التصاميم المعاصرة.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-gem"></i>
+                <h3>بديل الرخام</h3>
+                <p>إعطاء مظهر الرخام الطبيعي الفاخر بتكلفة مناسبة، مقاوم للماء وسهل التنظيف والتركيب.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-align-justify"></i>
+                <h3>بديل الخشب (WPC)</h3>
+                <p>شرائح وتكسيات جدارية بمظهر الخشب الدافئ لتصميم الممرات، الصالات، وخلفيات الجدران.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tv"></i>
+                <h3>ديكورات الشاشات</h3>
+                <p>تصميم خلفيات شاشات تلفزيون دمج بين بديل الخشب والرخام مع رفوف وإضاءات ليد مخفية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مخصص خلفيات وديكورات التلفزيون -->
+    <section class="tv-section" id="tv-design">
+        <div class="tv-container">
+            <div class="tv-text">
+                <h2>ديكورات وخلفيات التلفزيون الحديثة</h2>
+                <p>نبتكر لك أفكاراً مميزة لخلفيات الشاشات المدمجة بالإضاءة المخفية (LED) والأرفف المعلقة لتناسب مساحة الصالة أو المجلس لديك:</p>
+                <ul class="tv-features">
+                    <li><i class="fas fa-check-circle"></i> دمج بديل الخشب مع ألواح بديل الرخام.</li>
+                    <li><i class="fas fa-check-circle"></i> إخفاء كافة التمديدات والأسلاك بشكل الجمالي.</li>
+                    <li><i class="fas fa-check-circle"></i> إضافة أرفف شيبورد أو طاولة شاشة معلقة.</li>
+                    <li><i class="fas fa-check-circle"></i> تركيبة إضاءة ليد دافئة (Warm Light).</li>
+                </ul>
+            </div>
+            <div class="tv-image">
+                <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?auto=format&fit=crop&w=800&q=80" alt="ديكور شاشة تلفزيون">
+            </div>
+        </div>
+    </section>
+
+    <!-- الأزرار العائمة (واتساب واتصال مباشر) -->
+    <div class="floating-buttons">
+        <!-- زر الواتساب -->
+        <a href="https://wa.me/966579202448" target="_blank" class="float-btn whatsapp" title="تواصل عبر الواتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- زر الاتصال الهاتفي -->
+        <a href="tel:0579202448" class="float-btn phone" title="اتصال مباشر">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - تنفيذ وتنفيذ توريد الديكورات الداخلية الحديثة</p>
+    </footer>
+
+</body>
+</html>
